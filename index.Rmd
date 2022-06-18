@@ -243,8 +243,6 @@ Includes …
 - All major types of schools in all secondary school grades (typically 5 to 10)
 - In German states after World War II
 
---
-
 ## Exposure measure for civic education
 - Compulsory hours per week of civic education students have received in each cohort
 - Longitudinal data set on the intensive and extensive margin of civic education]
@@ -357,7 +355,7 @@ include_graphics("img/pol_preferences.JPG")
 ---
 # Outlook and Conlcusion
 
-- Strong gender differences in the effect of civic education, especially on satisfaction with democracy and political left-right attitude
+- Strong gender differences in the effect of civic education
 
 ## Next steps
 
