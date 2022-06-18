@@ -200,9 +200,12 @@ Is there a causal effect of mandatory civic education (taught in secondary schoo
 ## Quasi-experimental design 
 Exploit unique (West-) German setting with substantial post-war variation across German states and school types due to school reforms 
 
+--
+
 ## Treatment
 Number of hours students are exposed to civic education in school 
 
+--
 
 ## Data
 
@@ -238,7 +241,9 @@ Novel database on civic education `r fontawesome::fa('plus', fill = "#669999")` 
 .pull-left[
 Includes …
 - All major types of schools in all secondary school grades (typically 5 to 10)
-- In West-German states after World War II
+- In German states after World War II
+
+--
 
 ## Exposure measure for civic education
 - Compulsory hours per week of civic education students have received in each cohort
@@ -265,8 +270,10 @@ include_graphics("img/reform_pattern.png")
 
 ## SOEP
 - Match the civic education records with individual-level data from the German Socio-Economic Panel (GSOEP). 
+- Contains outcome variables
 - Individuals who entered primary school between 1949 and 2014
 - We include only West German birth cohorts
+- about 30.000 observations
 
 ## Data link between exposure to civic education and individuals
 - Use of the best information available on state of schooling, school type, and school entry year
@@ -279,9 +286,7 @@ include_graphics("img/reform_pattern.png")
 
 “Generally speaking, how much are you interested in politics? Very interested, moderately interested, not much interested, or completely disinterested?” (1 to 4)
 
-## Satisfaction with democracy 
-
-“How satisfied are you today with democracy as it exists in Germany?” (0 to 10)
+--
 
 ## Political attitude 
 
@@ -299,12 +304,21 @@ $$\beta^{ACR} = Y_{igt}(d) - Y_{igt}(d')$$
 
 $\beta^{ACR}$: average causal response (ACR) for change in civic education from level d' to d
 
-
 **Identifying assumptions**
 - Strong exogeneity
 - Common trends in untreated potential outcomes, $Y_{igt}(d')$
 - Independent groups
 
+---
+# Constant effect TWFE model
+
+$$y_{isptl} = \alpha + \beta d_{spt} + \mathbf{\delta'}\mathbf{x}_{isptl} + \mathbf{\gamma'}\mathbf{x}_{spt} + \tau_{sp} + \lambda_t + \theta_l + \lambda_t \times \mu_s  + \epsilon_{isptl}$$
+
+- $i$: individual response, $s$: state, $p$: school type, $t$: cohort, $l$ survey year 
+- $d_{spt}$: continous measure of civic education: varies by state $(s)$ $\times$ school type $(p)$ over cohorts $(t)$
+- $x$: individual and group level controls (gender, age, parental education, party in power)
+- $\tau_{sp}$ group, $\lambda_t$ cohort, and $\theta_l$ survey year FE
+- $\lambda_t \times \mu_s$ non-parametric state-specific trends
 --
 
 ## Heterogeneity 
@@ -313,25 +327,31 @@ $\beta^{ACR}$: average causal response (ACR) for change in civic education from 
 --
 
 - **Solution**: Heterogeneous-effects “extended” TWFE model (eTWFE)
+- If heterogeneity is modelled correctly: eTWFE is unbiased 
 
 ---
 # Empirical Model
 
 Heterogeneous-effects “extended” TWFE model (eTWFE)
 
-$$y_{igst} = \alpha + f(\mathbf{x}_{gt}, ...) d_{gt} + \mathbf{\delta'}\mathbf{x}_{igt} + \mathbf{\gamma'}\mathbf{x}_{gt} + \mu_{gs} + \lambda_t + \lambda_t \times \mu_s  + \epsilon_{igst}$$
+$$y_{igst} = \alpha + \beta'_{isgtl} f(\tau_{sp}, \lambda, age;d) +...+ \epsilon_{igst}$$
 <br>
 
-- $i$: individual response, $g$: state x school type, $s$: state, $t$: cohort, $d$: continous measure of civic education, $y$: outcome of interest, $x$: individual and group level controls (gender, age, parental education, party in power)
-- $f(.)$ varies by: cohort (in decades), age (quartic trend), state x school type
-- Intuition: estimate $f(.)$ with interaction terms & compute $\beta^{ACR}$
-- If heterogeneity is modelled correctly: eTWFE is unbiased 
+- Estimate for average marginal effect of reform $\beta^{ACR} = n^{-1} \sum^n_{i=1}\beta_{isgtl}$
+- $f(\cdot; d)$ denotes the interaction terms with treatment $d$ and the DID dimensions, varies by: cohort (in decades), age (quartic trend), state x school type
 
 ---
-# Preliminary Results 
+# Preliminary Results: Effect of civic education on political interest 
 
 ```{r, echo=FALSE, out.width = "100%",fig.show = "hold"}
-include_graphics("img/results_table.JPG")
+include_graphics("img/pol_interest.JPG")
+```
+
+---
+# Preliminary Results: Effect of civic education on political preferences
+
+```{r, echo=FALSE, out.width = "100%",fig.show = "hold"}
+include_graphics("img/pol_preferences.JPG")
 ```
 
 ---
