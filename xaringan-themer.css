@@ -18,14 +18,14 @@
  *  Version: 0.4.1
  *
  * ------------------------------------------------------- */
-@import url(https://fonts.googleapis.com/css?family=SPS+local&display=swap);
+@import url(https://fonts.googleapis.com/css?family=Arial&display=swap);
 @import url(https://fonts.googleapis.com/css?family=Roboto&display=swap);
 @import url(https://fonts.googleapis.com/css?family=IBM+Plex+Mono&display=swap);
 
 
 :root {
   /* Fonts */
-  --text-font-family: 'SPS local';
+  --text-font-family: Arial;
   --text-font-is-google: 1;
   --text-font-family-fallback: -apple-system, BlinkMacSystemFont, avenir next, avenir, helvetica neue, helvetica, Ubuntu, roboto, noto, segoe ui, arial;
   --text-font-base: sans-serif;
@@ -34,29 +34,29 @@
   --header-font-family-fallback: Georgia, serif;
   --code-font-family: 'IBM Plex Mono';
   --code-font-is-google: 1;
-  --base-font-size: 25px;
-  --text-font-size: 1rem;
-  --code-font-size: 0.9rem;
+  --base-font-size: 12px;
+  --text-font-size: 2rem;
+  --code-font-size: 1.5rem;
   --code-inline-font-size: 1em;
-  --header-h1-font-size: 1.2rem;
-  --header-h2-font-size: 1.2rem;
-  --header-h3-font-size: 1.15rem;
+  --header-h1-font-size: 2.75rem;
+  --header-h2-font-size: 2.25rem;
+  --header-h3-font-size: 1.75rem;
 
   /* Colors */
   --text-color: #272822;
-  --header-color: #4C5265;
+  --header-color: #728FCE;
   --background-color: #FFFFFF;
   --link-color: #669999;
   --code-highlight-color: rgba(255,255,0,0.5);
   --inverse-text-color: #ffffff;
-  --inverse-background-color: #4C5265;
+  --inverse-background-color: #728FCE;
   --inverse-header-color: #ffffff;
   --inverse-link-color: #ffffff;
-  --title-slide-background-color: #4C5265;
+  --title-slide-background-color: #728FCE;
   --title-slide-text-color: #ffffff;
-  --header-background-color: #4C5265;
+  --header-background-color: #728FCE;
   --header-background-text-color: #FFFFFF;
-  --base: #4C5265;
+  --base: #728FCE;
   --white: #FFFFFF;
   --black: #272822;
 }
@@ -72,12 +72,12 @@ body {
 }
 h1, h2, h3 {
   font-family: var(--header-font-family), var(--header-font-family-fallback);
-  font-weight: lighter;
+  font-weight: 600;
   color: var(--header-color);
 }
 .remark-slide-content {
   background-color: var(--background-color);
-  font-size: 1rem;
+  font-size: 2rem;
   padding: 16px 64px 16px 64px;
   width: 100%;
   height: 100%;
@@ -99,10 +99,10 @@ h1, h2, h3 {
 }
 .remark-inline-code {
   font-size: var(--code-inline-font-size);
-  color: #4C5265;
+  color: #728FCE;
 }
 .remark-slide-number {
-  color: #4C5265;
+  color: #728FCE;
   opacity: 1;
   font-size: 0.9rem;
 }
@@ -149,10 +149,10 @@ a, a > code {
   float: left;
 }
 .left-column h2, .left-column h3 {
-  color: #4C526599;
+  color: #728FCE99;
 }
 .left-column h2:last-of-type, .left-column h3:last-child {
-  color: #4C5265;
+  color: #728FCE;
 }
 .right-column {
   width: 75%;
@@ -174,7 +174,7 @@ img, video, iframe {
   max-width: 100%;
 }
 blockquote {
-  border-left: solid 5px #4C526580;
+  border-left: solid 5px #728FCE80;
   padding-left: 1em;
 }
 .remark-slide table {
@@ -189,7 +189,7 @@ th, td {
   padding: 5px;
 }
 .remark-slide thead, .remark-slide tfoot, .remark-slide tr:nth-child(even) {
-  background: #DBDCE0;
+  background: #E2E8F5;
 }
 table.dataTable tbody {
   background-color: var(--background-color);
@@ -199,7 +199,7 @@ table.dataTable.display tbody tr.odd {
   background-color: var(--background-color);
 }
 table.dataTable.display tbody tr.even {
-  background-color: #DBDCE0;
+  background-color: #E2E8F5;
 }
 table.dataTable.hover tbody tr:hover, table.dataTable.display tbody tr:hover {
   background-color: rgba(255, 255, 255, 0.5);
