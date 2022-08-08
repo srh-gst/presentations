@@ -91,7 +91,7 @@ xaringanExtra::use_tile_view()
 
 
 .footnotesize[<sup>1</sup>ifo Institute, University of Munich]
-.footnotesize[<sup>2</sup>Stanford University, CESiso, IZA, NBER]
+.footnotesize[<sup>2</sup>Stanford University, CESifo, IZA, NBER]
 .footnotesize[<sup>3</sup>ifo Institute, University of Munich, CESifo, IZA]
 
 <br>
@@ -109,7 +109,7 @@ IIPF Conference
 
 .pull-left[
 
-* Primary development goal: all youths around the world achieve at least basic skills 
+* Primary development goal: all youth around the world achieve at least basic skills 
 
 * Immense importance for inclusive world development 
 
@@ -124,7 +124,7 @@ IIPF Conference
 # This Paper 
 
 ## Our research goal
-1. Provide the best estimates of share of children not achieving basic skills in all countries of the world 
+1. Provide the best estimates of the share of children not achieving basic skills in all countries of the world 
 2. Provide world estimate of the lost economic output due to missing the goal of global universal basic skills 
 
 --
@@ -169,7 +169,7 @@ class: middle, center
 
 .content-box-blue[
 ### Universal Basic Skills
-At least PISA Level 2 (420 points in math and 410 for science)
+At least PISA Level 2 (420 points in math and 410 in science)
 ]
 
 ---
@@ -188,12 +188,12 @@ We use the subset of countries, $C$, that takes the PISA test and TIMSS (or one 
 
 - Sub-territorial PISA participation
 - **India**: Educational Initiative: Tamil Nadu scores 0.02 sd below the national mean `r fontawesome::fa('long-arrow-alt-right')` **shift the PISA distribution for Tamil Nadu to estimate the national distribution**
-- **China**: Use 2014 wave of the China Family Panel Studies (CFPS) to **re-center PISA scores** 
+- **China**: Use the 2014 wave of the China Family Panel Studies (CFPS) to **re-center PISA scores** 
 
 ---
 # Imputation of Achievement 
 
-We predict the proportion of the students below basic skills in country j as:
+We predict the proportion of students below basic skills in country j as:
 
 $$\rho^j = \alpha_0 + \alpha_1 E^N_j + \alpha_2 GDP_j + v_j + \mu_j + \varepsilon_j$$
 where $E^N_j$ is net enrollment in secondary school, $GDP_j$ is gross domestic product per capita, and $v$ and $\mu$ are indicators for world regions and income groups, and $\epsilon$ is an error term. ($R^2 = 0.835$)
@@ -270,7 +270,7 @@ Whole workforce has gone through reform
 GDP growth: 
 
 $$g_\tau = \gamma \bar{A_{\tau}}$$
-where $\gamma$ is thes estimated impact of aggregated skills on growth rates and $\bar{A_{\tau}}$ are the skills of the workforce 
+where $\gamma$ is the estimated impact of aggregated skills on growth rates and $\bar{A_{\tau}}$ are the skills of the workforce 
 
 --
 
@@ -308,7 +308,7 @@ name: sensitivity
 
 ## Share of children not achieving basic skills
 - At least 2/3 of the world’s youth do not obtain basic skills. 
-- In high-income countries, 25 % of children lacks basic skills. 
+- In high-income countries, 25 % of children lack basic skills. 
 - Skill deficits reach 94 % in Sub-Saharan Africa and 90 % in South Asia but also hit 70 % in Middle East and North Africa and 66 % in Latin America.
 
 --
@@ -320,7 +320,7 @@ name: sensitivity
 
 ## Need for an internationally standardized test
 - Our analysis provides a first global picture of the distribution of skills around the world, but it comes with uncertainty.
-- Half of the world’s youth live in the 35 countriesthat fail to participate in international tests.
+- Half of the world’s youth live in the 35 countries that fail to participate in international tests.
 - It would be a great service to world development if an international development organization were to institute a regular, internationally standardized test of representative samples of students in all countries of the global South.
 
 
@@ -420,7 +420,7 @@ name: rb_chn_ind
 `r fontawesome::fa('long-arrow-alt-right')` **not representative**
 - **Baseline:** Use 2014 wave of the China Family Panel Studies (CFPS) to re-center PISA scores
 - **Upper bound:** PISA 2018 results
-- **Lower bound:** PISA 2018 results for urban population, all rurual children below basic skills
+- **Lower bound:** PISA 2018 results for urban population, all rural children below basic skills
 
 ## India 
 - Himachal Pradesh and Tamil Nadu participated in the PISA 2009 
