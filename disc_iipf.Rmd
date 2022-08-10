@@ -1,0 +1,65 @@
+---
+title: "Discussion"
+subtitle: "Immigran Peers and Foreign Language Acquisition - Green, Haaland, and Iversen"
+author: "Sarah Gust"
+institute: "ifo Institute"
+date: "IIPF August 12, 2022"
+output: binb::metropolis
+classoption: "aspectratio=169"
+---
+
+```{r include = FALSE}
+library(knitr)
+library(dplyr)
+library(kableExtra)
+library(stargazer)
+library(xtable)
+library(grid)
+library(gridExtra)
+library(ggplot2)
+library(tidyverse)
+library(bookdown)
+library(stargazer)
+library(png)
+library(icons)
+library(qrcode)
+library(DiagrammeR)
+```
+
+## Main Takeaway (I)
+
+### Research Question 
+- Previous literature focuses on negative spillovers of students with immigrant background on native students in core subjects 
+
+- What about positive spillovers on foreign language skills from (English) native speakers?
+
+### Nice setting
+
+- Compulsary English classes from early primary school
+- Test score for all Norwegian eigth graders for 2007 to 2015 (one month upon entry into middle school) 
+`r fontawesome::fa('plus')` family information from Statistics Norway 
+`r fontawesome::fa('plus')` information on schools from administrative system 
+
+- Note: They observe school/ grade but not the class 
+
+- ESB student: if the student or at least one of their parents is from an English speaking country
+
+## Main Takeaway (II)
+
+### Identifcation
+
+- Within school-cohort variation in the share/number of ESB students holding constant the share / number of immigrant and refugee students
+
+### Finding
+
+- Norwegian primary school children exposed to English speaking peers exhibit higher educational attainment in English
+
+## Questions and Comments 
+
+- Read the paper, it's fun and it has a nice flow! Whenever I wrote down a question they answered it in the next sentence.
+
+- Empirical strategy: I was a bit confused by your vector of controls ($\boldsymbol{X}_{icst}$ or $\boldsymbol{X}_{cst}$ and measured at 5th or 8th grade) but I found my answer in the table notes `r fontawesome::fa('check')`
+
+- What is the channel/ mechanism for the spillover? Do ESB students increase quality of English class? Do they speak English during the breaks/ after school...
+
+- "Our results have implications [...] for how foreign languages are taught in school" `r fontawesome::fa('arrow-right')` Which implications do you have in mind? 
