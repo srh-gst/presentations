@@ -169,7 +169,8 @@ class: middle, center
 
 .content-box-blue[
 ### Universal Basic Skills
-At least PISA Level 2 (420 points in math and 410 in science)
+Fully achieving PISA Level 1 (420 points in math and 410 in science)
+`r fontawesome::fa('long-arrow-alt-right')` lowest of 6 performance levels in PISA
 ]
 
 ---
