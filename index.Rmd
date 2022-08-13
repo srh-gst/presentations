@@ -1,5 +1,5 @@
 ---
-title: "GUBS IIPF"
+title: "GUBS OSLO"
 output:
   xaringan::moon_reader:
     seal: false
@@ -63,7 +63,6 @@ style_mono_accent(base_color = "#728FCE",
 .hide-count .remark-slide-number {
   display: none;
 }
-
 ```
 
 ```{r, caption_datatable, include=FALSE, cache=FALSE}
@@ -74,7 +73,6 @@ js <- c(
   "  $(table).append('<caption style=\"caption-side: bottom\">' + caption + '</caption>');",
   "}"
 )
-
 xaringanExtra::use_tile_view()
 ```
 <br>
@@ -95,9 +93,9 @@ xaringanExtra::use_tile_view()
 .footnotesize[<sup>3</sup>ifo Institute, University of Munich, CESifo, IZA]
 
 <br>
-IIPF Conference  
+Workshop: Educational Resources and Student Performance 
 
-12 August 2022
+Oslo, August 22, 2022
 
 <br>
 <br>
@@ -222,6 +220,18 @@ class: middle, center
 # 2. The Economic Gains from Global Universal Basic Skills
 
 ---
+# Long Term Growth and Achievement
+
+.pull-left[
+<img src="img/growth.PNG" width="100%"/> 
+]
+
+.pull-right[
+- In the long run, growth depends primarily on the skills of the people (Hanushek and Woessmann 2015)
+- Hanushek and Woessmann (2015) show that the effect of skills on growth is causal  
+]
+
+---
 
 # Three Reform Scenarios
 
@@ -291,6 +301,13 @@ $$V = \sum^{S}_{\tau=1} (GDP^{reform}_{\tau}-GDP^{no\:reform}_{\tau}) * (1 + d)^
 
 [Parameters](#parameters)
 ---
+# Assumptions 
+
+- Countries can develop simultaneously
+- The economies of developing countries will evolve with the improvement of schools so that they effectively use the higher quality labor force
+
+---
+
 # Projection Results 
 
 <img src="img/table_5.PNG" width="100%"/> 
@@ -447,4 +464,3 @@ class: hide-count
 <img src="img/china_india.PNG" width="100%"/> 
 
 [Go back](#sensitivity)
-
