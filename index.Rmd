@@ -113,7 +113,6 @@ Oslo, August 22, 2022
 
 * Limited country coverage of previous work 
 
-* How could global development be altered by improved schooling policies that aided those currently without internationally-competitive skills.  
 ]
 
 .pull-right[
@@ -230,7 +229,8 @@ class: middle, center
 
 .pull-right[
 - In the long run, growth depends primarily on the skills of the people (Hanushek and Woessmann 2015)
-- Hanushek and Woessmann (2015) show that the effect of skills on growth is causal  
+- Hanushek and Woessmann (2015) show that the effect of skills on growth is causal 
+- How could global development be altered by improved schooling policies that aided those currently without internationally-competitive skills. 
 ]
 
 ---
