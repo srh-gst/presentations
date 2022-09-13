@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="" xml:lang="">
   <head>
-    <title>GUBS OSLO</title>
+    <title>GUBS VfS</title>
     <meta charset="utf-8" />
     <link href="libs/remark-css-0.0.1/hygge.css" rel="stylesheet" />
     <link href="libs/tile-view-0.2.6/tile-view.css" rel="stylesheet" />
@@ -12,6 +12,8 @@
     <textarea id="source">
 
 class: center, middle, hide-count
+
+
 
 
 
@@ -45,9 +47,9 @@ class: center, middle, hide-count
 .footnotesize[&lt;sup&gt;3&lt;/sup&gt;ifo Institute, University of Munich, CESifo, IZA]
 
 &lt;br&gt;
-Workshop: Educational Resources and Student Performance 
+VfS Conference 
 
-Oslo, August 22, 2022
+Basel, September 12, 2022
 
 &lt;br&gt;
 &lt;br&gt;
@@ -100,6 +102,13 @@ class: middle, center
 ---
 # Data
 
+## The available student achievement data
+- Tests designed to provide internationally comparable information on math and science achievement 
+- Each test surveys representative samples of students in the participating countries
+- Varying degrees of certainty and precision in comparability 
+
+--
+
 .pull-left[
 - **Layer 1: PISA participants**  
   - PISA &amp; PISA for Development
@@ -124,6 +133,16 @@ Fully achieving PISA Level 1 (420 points in math and 410 in science)
 <svg aria-hidden="true" role="img" viewBox="0 0 448 512" style="height:1em;width:0.88em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;position:relative;"><path d="M313.941 216H12c-6.627 0-12 5.373-12 12v56c0 6.627 5.373 12 12 12h301.941v46.059c0 21.382 25.851 32.09 40.971 16.971l86.059-86.059c9.373-9.373 9.373-24.569 0-33.941l-86.059-86.059c-15.119-15.119-40.971-4.411-40.971 16.971V216z"/></svg> lowest of 6 performance levels in PISA
 ]
 
+--
+
+## Analytic sample 
+all countries in the world that 
+- Have a population of at least 1 million or 
+- Represent at least 0.01% of world GDP
+- Exclude North Korea, Somalia, South Sudan, Syria, Venezuela, and Yemen (lack reliable population/GDP data) 
+**<svg aria-hidden="true" role="img" viewBox="0 0 448 512" style="height:1em;width:0.88em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;position:relative;"><path d="M313.941 216H12c-6.627 0-12 5.373-12 12v56c0 6.627 5.373 12 12 12h301.941v46.059c0 21.382 25.851 32.09 40.971 16.971l86.059-86.059c9.373-9.373 9.373-24.569 0-33.941l-86.059-86.059c-15.119-15.119-40.971-4.411-40.971 16.971V216z"/></svg> 159 countries that cover 98.1% of world population and 99.4% of world GDP** 
+
+
 ---
 # New Method for Linking Scores Across the Different International Tests
 
@@ -132,14 +151,27 @@ We convert any individual TIMSS score, `\(t_i\)`, into the corresponding PISA sc
 `$$p_i = \frac{(t_i - m^C_{TIMSS})}{s^C_{TIMSS}} s^C_{PISA} + m^C_{PISA}$$`
 We use the subset of countries, `\(C\)`, that takes the PISA test and TIMSS (or one of the different regional tests) and estimate means and standard deviations of the common countries for the two distributions.
 
-&lt;img src="img/kdensity_timss_pisa_w_line220322.png" width="40%"/&gt;
-&lt;img src="img/kdensity_timss_w_line220322.png" width="40%"/&gt;
+&lt;img src="img/kdensity_timss_w_line220322.png" width="35%"/&gt;
+&lt;img src="img/kdensity_timss_pisa_w_line220322.png" width="35%"/&gt;
+
+
+---
+# Conversion of PASEC Achievement onto the PISA Scale (Layer 3)
+
+&lt;img src="img/kdensity_pasec.png" width="80%" class="center"/&gt;
+
+
+---
+# Comparison to Estimates based on Alternative Methods
+
+&lt;img src="img/scatter_comparison.png" width="70%" class="center"/&gt;
+
 
 ---
 # China and India
 
 - Sub-territorial PISA participation
-- **India**: Educational Initiative: Tamil Nadu scores 0.02 sd below the national mean <svg aria-hidden="true" role="img" viewBox="0 0 448 512" style="height:1em;width:0.88em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;position:relative;"><path d="M313.941 216H12c-6.627 0-12 5.373-12 12v56c0 6.627 5.373 12 12 12h301.941v46.059c0 21.382 25.851 32.09 40.971 16.971l86.059-86.059c9.373-9.373 9.373-24.569 0-33.941l-86.059-86.059c-15.119-15.119-40.971-4.411-40.971 16.971V216z"/></svg> **shift the PISA distribution for Tamil Nadu to estimate the national distribution**
+- **India**: Educational Initiative: Tamil Nadu scores 0.02 sd above the national mean <svg aria-hidden="true" role="img" viewBox="0 0 448 512" style="height:1em;width:0.88em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;position:relative;"><path d="M313.941 216H12c-6.627 0-12 5.373-12 12v56c0 6.627 5.373 12 12 12h301.941v46.059c0 21.382 25.851 32.09 40.971 16.971l86.059-86.059c9.373-9.373 9.373-24.569 0-33.941l-86.059-86.059c-15.119-15.119-40.971-4.411-40.971 16.971V216z"/></svg> **shift the PISA distribution for Tamil Nadu to estimate the national distribution**
 - **China**: Use the 2014 wave of the China Family Panel Studies (CFPS) to **re-center PISA scores** 
 
 ---
@@ -158,13 +190,25 @@ where `\(E^N_j\)` is net enrollment in secondary school, `\(GDP_j\)` is gross do
 - PISA-D out-of-school assessment 2018-2020
 - PIAAC Data: Dropouts from upper secondary school  
 
-**<svg aria-hidden="true" role="img" viewBox="0 0 448 512" style="height:1em;width:0.88em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;position:relative;"><path d="M313.941 216H12c-6.627 0-12 5.373-12 12v56c0 6.627 5.373 12 12 12h301.941v46.059c0 21.382 25.851 32.09 40.971 16.971l86.059-86.059c9.373-9.373 9.373-24.569 0-33.941l-86.059-86.059c-15.119-15.119-40.971-4.411-40.971 16.971V216z"/></svg> We assume out-of-school kids to be on the 25th percentile of each country on average** 
+**<svg aria-hidden="true" role="img" viewBox="0 0 448 512" style="height:1em;width:0.88em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;position:relative;"><path d="M313.941 216H12c-6.627 0-12 5.373-12 12v56c0 6.627 5.373 12 12 12h301.941v46.059c0 21.382 25.851 32.09 40.971 16.971l86.059-86.059c9.373-9.373 9.373-24.569 0-33.941l-86.059-86.059c-15.119-15.119-40.971-4.411-40.971 16.971V216z"/></svg> Assume that youths outside school perform on average at 25th percentile of those currently in school in respective country ** 
 and add multiple sensitivity checks
 
 ---
-# Achievement of Basic Skills
+# Results: Achievement of Basic Skills
 
-&lt;img src="img/table2.JPG" width="1060px"/&gt; 
+&lt;img src="img/table2_column1.png" width="80%" class="center"/&gt; 
+
+
+---
+# Results: Achievement of Basic Skills
+
+&lt;img src="img/share_below_students.png" width="1060px" class="center"/&gt; 
+
+
+---
+# Results: Achievement of Basic Skills
+
+&lt;img src="img/table2_column5.png" width="80%" class="center"/&gt; 
 
 
 ---
@@ -264,9 +308,15 @@ The total value V of the reform
 
 # Projection Results 
 
-&lt;img src="img/table_5.PNG" width="100%"/&gt; 
+&lt;img src="img/proj_results.png" width="100%" class="center"/&gt; 
 
 ---
+
+# Projection Results 
+
+&lt;img src="img/table_5.png" width="100%" class="center"/&gt; 
+---
+
 name: sensitivity 
 
 # Sensitivity 

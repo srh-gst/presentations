@@ -1,6 +1,6 @@
 ---
 title: "Discussion"
-subtitle: "Immigran Peers and Foreign Language Acquisition - Green, Haaland, and Iversen"
+subtitle: "Immigrant Peers and Foreign Language Acquisition - Green, Haaland, and Iversen"
 author: "Sarah Gust"
 institute: "ifo Institute"
 date: "IIPF August 12, 2022"
