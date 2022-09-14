@@ -369,11 +369,15 @@ name: sensitivity
 
 # Sensitivity 
 
-- Alternative parameter choices of the simulation model [show](#rb_param)
-- Skill level of children who are not in school [show](#rb_skill)
-- Achievement estimates of the children who are currently in school [show](#rb_skill)
-- Varying uncertainty by layer [show](#rb_skill)
-- Lower and upper bound for China and India [show](#rb_chn_ind)
+- Skill estimates
+  - Exclude uncertain layers, skill level of children not in school [show](#skills)
+  - Alternative bounds for India and China [show](#rb_chn_ind)
+
+- Projection: 
+  - Alternative parameter choices of the simulation model [show](#rb_param)
+  - Skill level of children who are not in school [show](#rb_skill)
+  - Achievement estimates of the children who are currently in school [show](#rb_skill)
+  - Varying uncertainty by layer [show](#rb_skill)
 
 ---
 
@@ -465,6 +469,45 @@ $$\Delta^t = g * \Delta TS$$
 
 ---
 class: hide-count
+name: skills
+
+#  Sensitivity of skill estimates: Restriction to higher layers of reliability and bounding of out-of-school children 
+
+[Go back](#sensitivity)
+
+<img src="img/table_3.PNG" width="80%"/> 
+
+
+
+---
+class: hide-count
+name: rb_chn_ind
+
+# China and India 
+
+## China
+- Beijing, Shanghai, Jiangsu and Zhejiang participated in **PISA 2018** <br>
+`r fontawesome::fa('long-arrow-alt-right')` **not representative**
+- **Baseline:** Use 2014 wave of the China Family Panel Studies (CFPS) to re-center PISA scores
+- **Upper bound:** Baseline for urban children, rural Vietnam
+- **Lower bound:** Baseline for urban children, rural Cambodia
+
+## India 
+- Himachal Pradesh and Tamil Nadu participated in the PISA 2009 
+- **Baseline:** Educational Initiative: Tamil Nadu scores 0.02 sd below the national mean `r fontawesome::fa('long-arrow-alt-right')` **shift the PISA distribution for Tamil Nadu to estimate the national distribution** 
+- **Upper bound:** unadjusted score for Tamil Nadu 
+- **Lower bound:** unadjusted score for Himachal Pradesh  
+
+---
+class: hide-count
+
+#  Sensitivity of skill estimates: Alternative bounds on India and China
+
+<img src="img/table_4.PNG" width="80%"/> 
+
+[Go back](#sensitivity)
+---
+class: hide-count
 name: parameters
 
 <img src="img/parameters.PNG" width="80%"/> 
@@ -489,30 +532,4 @@ name: rb_skill
 
 [Go back](#sensitivity)
 
----
-class: hide-count
-name: rb_chn_ind
 
-# China and India 
-
-## China
-- Beijing, Shanghai, Jiangsu and Zhejiang participated in **PISA 2018** <br>
-`r fontawesome::fa('long-arrow-alt-right')` **not representative**
-- **Baseline:** Use 2014 wave of the China Family Panel Studies (CFPS) to re-center PISA scores
-- **Upper bound:** PISA 2018 results
-- **Lower bound:** PISA 2018 results for urban population, all rural children below basic skills
-
-## India 
-- Himachal Pradesh and Tamil Nadu participated in the PISA 2009 
-- **Baseline:** Educational Initiative: Tamil Nadu scores 0.02 sd below the national mean `r fontawesome::fa('long-arrow-alt-right')` **shift the PISA distribution for Tamil Nadu to estimate the national distribution** 
-- **Upper bound:** unadjusted score for Tamil Nadu 
-- **Lower bound:** unadjusted score for Himachal Pradesh  
-
----
-class: hide-count
-
-# Sensitivity of simulation results: Lower and upper bound for China and India 
-
-<img src="img/china_india.PNG" width="100%"/> 
-
-[Go back](#sensitivity)
