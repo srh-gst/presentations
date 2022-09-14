@@ -362,7 +362,7 @@ $$V = \sum^{S}_{\tau=1} (GDP^{reform}_{\tau}-GDP^{no\:reform}_{\tau}) * (1 + d)^
 
 # Projection Results 
 
-<img src="img/table_5.png" width="100%" class="center"/> 
+<img src="img/table_5.PNG" width="100%" class="center"/> 
 ---
 
 name: sensitivity 
